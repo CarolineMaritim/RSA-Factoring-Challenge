@@ -1,0 +1,9 @@
+#!/usr/bin/python3
+
+
+from sympy import factorint:
+
+
+def rsa_factorization(modulus):
+    factors = factorint(modulus)
+    return (factors)

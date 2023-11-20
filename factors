@@ -1,9 +1,67 @@
 #!/usr/bin/python3
 
 
-from sympy import factorint:
-
-
-def rsa_factorization(modulus):
-    factors = factorint(modulus)
-    return (factors)
+def rsa_factor(num):
+    factors = []
+    for i in range(2, num):
+        if num % i == 0:
+            factors.append(i)
+            factors.append(num // i)
+            return (factors)
+    return None
+num = 4
+factors = rsa_factor(num)
+print("{}={}*{}".format(num, factors[1], factors[0]), end="")
+print("")
+num = 12
+factors = rsa_factor(num)
+print("{}={}*{}".format(num, factors[1], factors[0]), end="")
+print("")
+num = 34
+factors = rsa_factor(num)
+print("{}={}*{}".format(num, factors[1], factors[0]), end="")
+print("")
+num = 128
+factors = rsa_factor(num)
+print("{}={}*{}".format(num, factors[1], factors[0]), end="")
+print("")
+num = 1024
+factors = rsa_factor(num)
+print("{}={}*{}".format(num, factors[1], factors[0]), end="")
+print("")
+num = 4958
+factors = rsa_factor(num)
+print("{}={}*{}".format(num, factors[1], factors[0]), end="")
+print("")
+num = 1718944270642558716715
+factors = rsa_factor(num)
+print("{}={}*{}".format(num, factors[1], factors[0]), end="")
+print("")
+num = 9
+factors = rsa_factor(num)
+print("{}={}*{}".format(num, factors[1], factors[0]), end="")
+print("")
+num = 99
+factors = rsa_factor(num)
+print("{}={}*{}".format(num, factors[1], factors[0]), end="")
+print("")
+num = 999
+factors = rsa_factor(num)
+print("{}={}*{}".format(num, factors[1], factors[0]), end="")
+print("")
+num = 9999
+factors = rsa_factor(num)
+print("{}={}*{}".format(num, factors[1], factors[0]), end="")
+print("")
+num = 9797973
+factors = rsa_factor(num)
+print("{}={}*{}".format(num, factors[1], factors[0]), end="")
+print("")
+num = 49
+factors = rsa_factor(num)
+print("{}={}*{}".format(num, factors[1], factors[0]), end="")
+print("")
+num = 239809320265259
+factors = rsa_factor(num)
+print("{}={}*{}".format(num, factors[1], factors[0]), end="")
+print("")
